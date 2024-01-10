@@ -19,6 +19,34 @@ var swiper = new Swiper(".BanarSlide", {
     },
   });
 
+  var swiper = new Swiper(".BrandSlide", {
+      slidesPerView: 5,
+      spaceBetween: 80,
+      loop: true,
+      autoplay: {
+        delay: 6500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".portfolioSlid", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 6500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
 
   // Define variables
 var tabLabels = document.querySelectorAll("#tabs li");
