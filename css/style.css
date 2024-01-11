@@ -935,3 +935,256 @@ display: block;
 	margin: 0;
 	text-transform: uppercase;
 }
+.accordion-button::after {
+	display: none;
+}
+.faq-ecul {
+	padding-top: 120px;
+}
+.accordion {
+	padding: 30px;
+	background: #fff;
+}
+.accordion-button {
+	background: transparent;
+	padding: 16px 20px 16px 70px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px;
+	color: #001659;
+	font-family: 'Exo 2', sans-sarif;
+}
+.accordion-number {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #ebedf2;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	color: #FF5E14;
+	left: 0;
+	border-radius: 50%;
+	background: #fff;
+}
+.accordion-item {
+	padding-top: 20px;
+	border: 0;
+	border-radius: 0 !important;
+}
+.accordion-body {
+	line-height: 28px;
+	color: #53545A;
+	padding: 16px 20px 16px 70px;
+}
+.accordion-item::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 1px;
+	border: 1px dashed #d4d4d5;
+	top: 0;
+	left: 25px;
+	transform: translateX(-50%);
+}
+.accordion-button:not(.collapsed) {
+	background: transparent;
+	box-shadow: none;
+}
+.viseo-bg {
+	height: 557px;
+	background: url(../imgs/faq-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.video-play-btn {
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	line-height: 90px;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #FF5E14;
+	transition: 0.3s;
+	animation: playbtn infinite 3.5s;
+}
+.video-play-btn:hover {
+	color: #001659;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+@keyframes playbtn {
+	0% {
+		box-shadow: 0px 0px 0px 0px rgba(225,225,225,0.3);
+	}
+	40% {
+		box-shadow: 0px 0px 0px 20px rgba(225,225,225,0);
+	}
+	80% {
+		box-shadow: 0px 0px 0px 20px rgba(225,225,225,0);
+	}
+	100% {
+		box-shadow: 0px 0px 0px 0px rgba(225,225,225,0);
+	}
+}	
+.faq-call-box {
+	padding: 30px;
+	background: #fff;
+	right: 0;
+	bottom: 0;
+}
+.call-icon img {
+	width: 54px;
+	height: 62px;
+	object-fit: contain;
+}
+.call-icon {
+	margin-right: 15px;
+}
+.call-content span {
+	line-height: 28px;
+	color: #53545A;
+}
+.call-content h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 34.8px;
+	color: #001659;
+	font-family: 'Exo 2', sans-sarif;
+}
+
+.blog-img img {
+	width: 100%;
+	height: 230px;
+}
+.blog-card {
+	margin-top: 40px;
+	border: 1px solid #EBEDF2;
+}
+.blog-contenr {
+	padding: 0px 30px 30px;
+}
+.post-author img {
+	width: 34px;
+	margin-right: 10px;
+}
+.post-author a {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 34px;
+	text-transform: uppercase;
+	color: #001659;
+	transition: all 0.3s ease-in-out;
+}
+.post-author a:hover {
+	color: #FF5E14;
+}
+.post-date a:hover {
+	color: #FF5E14;
+}
+.post-date i {
+	color: #FF5E14;
+	margin-right: 5px;
+}
+.post-date a {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 34px;
+	text-transform: uppercase;
+	color: #001659;
+	transition: all 0.3s ease-in-out;
+}
+.post-member {
+	padding: 8px 20px;
+	margin-bottom: 15px;
+	border: 1px solid #EBEDF2;
+	margin-top: -31px;
+	background: #fff;
+}
+.post-member::after {
+	position: absolute;
+	content: "";
+	height: 100%;
+	border: 1px solid #EBEDF2;
+	left: 50%;
+	top: 0;
+}
+.blog-title {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 34.8px;
+	text-transform: uppercase;
+	font-family: 'Exo 2', sans-sarif;
+	margin-bottom: 15px;
+}
+.blog-title a {
+	color: #001659;
+	transition: all 0.3s ease-in-out;
+}
+.blog-title a:hover {
+	color: #FF5E14;
+}
+.blog-btn {
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 1;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+	display: block;
+	color: #FF5E14;
+}
+.blog-btn:hover {
+	color: #001659;
+}
+.blog-img::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	background: #001659;
+	transition: all 0.4s ease-in-out;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+.blog-card:hover .blog-img::before {
+	width: 100%;
+	left: 0;
+	right: auto;
+	visibility: visible;
+	opacity: 0.5;
+}
+.our-blog {
+	padding-bottom: 120px;
+}
+
+
+.footer {
+	padding: 50px 0px 90px;
+	background: #F6F8FC;
+}
+.footer-center {
+	margin-left: 102.5px;
+	padding-left: 48px;
+}
+.footer-right {
+	margin-left: 102.5px;
+}
+.footer-wrap {
+	margin-top: 40px;
+}
+.footer-wrap h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 34.8px;
+	color: #001659;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	font-family: 'Exo 2', sans-sarif;
+}
+.foot-icon i {
+	font-size: 24px;
+	color: #FF5E14;
+	margin-right: 20px;
+}

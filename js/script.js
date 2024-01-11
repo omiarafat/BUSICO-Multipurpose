@@ -48,6 +48,7 @@ var swiper = new Swiper(".BanarSlide", {
     });
 
 
+
   // Define variables
 var tabLabels = document.querySelectorAll("#tabs li");
 var tabPanes = document.getElementsByClassName("tab-contents");
@@ -73,3 +74,31 @@ function activateTab(e) {
 tabLabels.forEach(function(label, index){
   label.addEventListener("click", activateTab);
 });
+
+
+// count js
+$(document).ready(function() {
+
+  var counters = $(".count");
+  var countersQuantity = counters.length;
+  var counter = [];
+
+  for (i = 0; i < countersQuantity; i++) {
+    counter[i] = parseInt(counters[i].innerHTML);
+  }
+
+  var count = function(start, value, id) {
+    var localStart = start;
+    setInterval(function() {
+      if (localStart < value) {
+        localStart++;
+        counters[id].innerHTML = localStart;
+      }
+    }, 0.2);
+  }
+
+  for (j = 0; j < countersQuantity; j++) {
+    count(25, counter[j], j);
+  }
+});
+// count js end
