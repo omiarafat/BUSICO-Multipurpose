@@ -20,12 +20,26 @@ var swiper = new Swiper(".BanarSlide", {
   });
 
   var swiper = new Swiper(".BrandSlide", {
-      slidesPerView: 5,
+      slidesPerView: 2,
       spaceBetween: 80,
       loop: true,
       autoplay: {
         delay: 6500,
         disableOnInteraction: false,
+      },
+      breakpoints: {
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1192: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
       },
       pagination: {
         el: ".swiper-pagination",
@@ -34,12 +48,22 @@ var swiper = new Swiper(".BanarSlide", {
     });
 
     var swiper = new Swiper(".portfolioSlid", {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
       autoplay: {
         delay: 6500,
         disableOnInteraction: false,
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
       },
       pagination: {
         el: ".swiper-pagination",

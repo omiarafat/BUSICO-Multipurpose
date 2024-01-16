@@ -1,0 +1,352 @@
+@media only screen and (max-width: 1201px) {
+    .main-menu {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 70px !important;
+        line-height: 81.9px !important;
+    }
+    .hero-content {
+        padding: 180px 16px 190px 0px;
+    }
+    .banar-wrap .swiper-button-prev, .banar-wrap .swiper-button-next {
+        top: 674px;
+    }
+    .banar-wrap .swiper-button-prev {
+        left: 979px;
+    }
+    .cta-text {
+        margin-left: 0;
+    }
+    .core-features-bg {
+        background: transparent !important;
+    }
+    .our-team-titl {
+        margin-left: 16.666%;
+    }
+    .team-member-img img {
+        width: 65% !important;
+    }
+    .team-member-img {
+        text-align: center;
+        background: #e8ecf8;
+    }
+    .faq-call-box {
+        bottom: -90px !important;
+    }
+    .footer-center {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+    .footer-right {
+        margin-left: 0 !important;
+    }
+    .footer-cta-wrap {
+        left: 12.5px !important;
+        width: 97.9% !important;
+    }
+    .foot-cta-text {
+        margin-left: 92.8px !important;
+    }
+    .cta-text-mar {
+        margin-left: 0px !important;
+    }
+    .core-features-bg {
+        background: transparent;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .banar-wrap .swiper-button-prev, .banar-wrap .swiper-button-next {
+        top: 525px !important;
+    }
+    .banar-wrap .swiper-button-prev {
+        left: 590px !important;
+    }
+    .hero-content {
+        margin-left: 0 !important;
+        padding: 120px 0px !important;
+    }
+    .hero-content h1 {
+        font-size: 50px !important;
+        line-height: 58.5px !important;
+    }
+    .hero-content p {
+        padding-right: 0px !important;
+    }
+    .workp-process {
+        padding: 100px 0px !important;
+    }
+    .single-work-item {
+        padding-right: 50px !important;
+    }
+    .single-work-item::after {
+        right: 50px !important;
+    }
+    .single-work-item.bordernon::after {
+        display: none !important;
+    }
+    .section-title h2 {
+        font-size: 42px !important;
+        line-height: 49.1333px !important;
+    }
+    .block-contents {
+        padding-right: 135px !important;
+    }
+    .about {
+        padding-bottom: 100px !important;
+    }
+    .img-block img {
+        width: 540px !important;
+    }
+    .img-block {
+        margin-bottom: 90px !important;
+    }
+    .our-service {
+        padding: 100px 0px !important;
+    }
+    .our-service .block-contents {
+        padding-right: 20px !important;
+    }
+    .cta-text h2 {
+        font-size: 26px !important;
+        line-height: 36.5px !important;
+    }
+    .cta-btn {
+        padding: 16px 30px 14px !important;
+    }
+    .cta-icon img {
+        width: 80px !important;
+        height: 92px !important;
+    }
+    .single-icon {
+        width: 123px !important;
+    }
+    .project-details-card {
+        margin: 48px 0px 0px 0px !important;
+    }
+    .testimonial-titl {
+        margin-left: 0 !important;
+    }
+    .testimonial-titl .block-contents {
+        padding-right: 0px !important;
+    }
+    .portfolio-carousel {
+        padding: 100px 0px !important;
+    }
+    .core-features {
+        padding: 100px 0px !important;
+    }
+    .brand-carousel {
+        padding: 100px 0px !important;
+    }
+    .testimonial-wrapper {
+        padding-top: 100px !important;
+    }
+    .cta-btn {
+        text-align: right !important;
+    }
+    .our-team {
+        padding-bottom: 100px !important;
+    }
+    .our-team-titl {
+        margin-left: 0 !important;
+    }
+    .our-team-titl .block-contents {
+        padding-right: 0px !important;
+    }
+    .team-member-img img {
+        width: 80% !important;
+        height: 340px !important;
+    }
+    .faq-funfact {
+        padding: 100px 0px !important;
+    }
+    .faq-number-wrap {
+        margin-bottom: 24px !important;
+    }
+    .faq-ecul {
+        padding-top: 100px !important;
+    }
+    .faq-call-box {
+        bottom: 0px !important;
+    }
+    .foot-cta-text {
+        margin-left: 0 !important;
+        padding-left: 12px !important;
+    }
+    .footer-socil-icon a {
+        margin: 5px 0px 5px 10px !important;
+    }
+    .footer-socil-icon {
+        margin-left: 32px !important;
+    }
+    .footer-cta-wrap {
+        top: -150px !important;
+    }
+    .footer-cta-wrap {
+        width: 96.7% !important;
+    }
+    .footer {
+        padding: 30px 0px 220px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .head-btn {
+        display: none;
+    }
+    .header-wrap {
+        padding: 15px 0px !important;
+    }
+    .hero-content {
+        padding: 100px 0px 110px !important;
+    }
+    .hero-content h1 {
+        font-size: 46px !important;
+        line-height: 53.8px !important;
+        margin-bottom: 25px !important;
+    }
+    .temp-btn {
+        padding: 16px 30px 14px !important;
+        margin: 20px 20px 0px 0px !important;
+        font-size: 15px !important;
+        line-height: 15px !important;
+    }
+    .banar-wrap .swiper-button-prev, .banar-wrap .swiper-button-next {
+        padding: 14px 28px !important;
+        width: 90px !important;
+    }
+    .banar-wrap .swiper-button-prev, .banar-wrap .swiper-button-next {
+        top: 529px !important;
+    }
+    .banar-wrap .swiper-button-prev {
+        left: 179px !important;
+    }
+    .workp-process {
+        padding: 80px 0px !important;
+    }
+    .single-work-item {
+        padding-right: 0px !important;
+        text-align: center;
+    }
+    .single-work-item::after {
+        display: none !important;
+    }
+    .img-block img {
+        width: 100% !important;
+    }
+    .poppu-img {
+        left: 0px !important;
+    }
+    .block-contents {
+        padding-right: 0px !important;
+    }
+    .section-title h2 {
+        font-size: 27px !important;
+        line-height: 31.133px !important;
+    }
+    #tabs li a {
+        font-size: 16px !important;
+    }
+    #tabs::after {
+        width: 100% !important;
+    }
+    .about {
+        padding-bottom: 80px !important;
+    }
+    .our-service {
+        padding: 80px 0px !important;
+    }
+    .cta-text {
+        display: block !important;
+        text-align: center;
+    }
+    .cta-icon img {
+        width: 60px !important;
+        height: 72px !important;
+    }
+    .core-features {
+        padding: 80px 0px !important;
+    }
+    .single-icon-item {
+        padding-right: 0px !important;
+        display: block !important;
+    }
+    .single-icon {
+        width: 100px !important;
+        margin-bottom: 20px !important;
+    }
+    .brand-carousel {
+        padding: 80px 0px !important;
+    }
+    .testimonial-wrapper {
+        padding-top: 80px !important;
+    }
+    .testimonial-item {
+        padding: 70px 25px 25px !important;
+    }
+    .testimonial-item p {
+        font-size: 17px !important;
+        line-height: 32.3px !important;
+    }
+    .client-info {
+        margin-top: 20px !important;
+    }
+    .portfolio-carousel {
+        padding: 80px 0px !important;
+    }
+    .our-team {
+        padding-bottom: 80px !important;
+    }
+    .faq-funfact {
+        padding: 80px 0px !important;
+    }
+    .faq-ecul {
+        padding-top: 80px !important;
+    }
+    .accordion-button {
+        padding: 0px 0px 0px 60px !important;
+    }
+    .accordion-body {
+        padding: 16px 20px 16px 60px !important;
+    }
+    .accordion {
+        padding: 30px 18px !important;
+    }
+    .viseo-bg {
+        height: 420px !important;
+    }
+    .video-play-btn {
+        width: 60px !important;
+        height: 60px !important;
+        line-height: 60px !important;
+        font-size: 14px !important;
+    }
+    .our-blog {
+        padding-bottom: 80px !important;
+    }
+    .footer-center {
+        padding-left: 12px !important;
+    }
+    .footer-cta-wrap {
+        padding: 30px !important;
+        top: -308px !important;
+        width: 92.7% !important;
+    }
+    .footer-logo img {
+        width: 255px !important;
+    }
+    .foot-cta-text {
+        margin: 24px 0px !important;
+    }
+    .footer-socil-icon {
+        margin-left: -10px !important;
+    }
+    .footer-menu {
+        margin-top: 16px !important;
+    }
+    .footer {
+        padding: 30px 0px 378px !important;
+    }
+}

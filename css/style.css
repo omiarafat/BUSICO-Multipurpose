@@ -17,6 +17,9 @@ li {
 body {
     font-family: 'Roboto', sans-serif;
 }
+img {
+	width: 100%;
+}
 
 
 
@@ -252,6 +255,9 @@ body {
 	margin-bottom: 25px;
 	color: #FF5E14;
 }
+.single-work-icon img {
+	width: 60px;
+}
 .single-work-content span {
 	font-size: 16px;
 	line-height: 1;
@@ -475,8 +481,10 @@ display: block;
 	background: #FF5E14;
 }
 .cta-text {
-	margin-left: 102.5px;
 	gap: 25px;
+}
+.cta-text-mar {
+	margin-left: 102.5px;
 }
 .cta-icon img {
 	width: 100px;
@@ -944,6 +952,8 @@ display: block;
 .accordion {
 	padding: 30px;
 	background: #fff;
+	border-left: 1px solid #EBEDF2;
+	border-bottom: 1px solid #EBEDF2;
 }
 .accordion-button {
 	background: transparent;
@@ -1161,7 +1171,7 @@ display: block;
 
 
 .footer {
-	padding: 50px 0px 90px;
+	padding: 50px 0px 205px;
 	background: #F6F8FC;
 }
 .footer-center {
@@ -1187,4 +1197,103 @@ display: block;
 	font-size: 24px;
 	color: #FF5E14;
 	margin-right: 20px;
+}
+.foot-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #53545A;
+	margin: 0;
+}
+.content-info {
+	margin-bottom: 20px;
+}
+.footer-center a {
+	margin-bottom: 15px;
+	transition: all 0.3s ease-in-out;
+}
+.footer-center a:hover {
+	color: #001659;
+	padding-left: 10px;
+}
+.inputbar {
+	width: 100%;
+	height: 60px;
+	padding: 0px 30px 0px 50px;
+	border: 0;
+	font-size: 16px;
+	color: #53545A;
+}
+.form-btn {
+	margin-top: 20px;
+	padding: 20px 30px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	background: #FF5E14;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	transition: all 0.4s ease-in-out;
+}
+.form-btn:hover {
+	background: #001659;
+	color: #fff;
+}
+.news-icon {
+	z-index: 1;
+	line-height: 60px;
+	margin-left: 20px;
+	color: #FF5E14;
+}
+.foot-text span {
+	font-weight: 700;
+	color: #001659;
+}
+.footer-cta-wrap {
+	padding: 40px;
+	background: #FF5E14;
+	top: -114px;
+	left: 28.5px;
+	width: 95.5%;
+}
+.foot-cta-text {
+	margin-left: 95.8px;
+}
+.footer-socil-icon a {
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	line-height: 50px;
+	transition: all 0.3s ease-in-out;
+	margin-left: 10px;
+	color: #001659;
+}
+.footer-socil-icon a:hover {
+	color: #fff;
+	background: #001659;
+}
+.foot-cta-text p {
+	line-height: 28px;
+	color: #fff;
+}
+.footer-bar {
+	padding: 75px 0px 25px;
+	background: #001659;
+}
+.coppyrite p {
+	line-height: 28px;
+	color: #fff;
+}
+.coppyrite p a {
+	font-weight: 600;
+	color: #FF5E14;
+}
+.footer-menu li a {
+	padding-right: 20px;
+	margin-left: 20px;
+	line-height: 1;
+	font-weight: 600;
+	color: #A9B0C7;
+	border-right: 1px solid #53545A;
 }
