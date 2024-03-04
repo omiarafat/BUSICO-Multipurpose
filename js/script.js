@@ -1,13 +1,5 @@
 
 
-
-
-
-
-
-
-
-
 var swiper = new Swiper(".BanarSlide", {
     slidesPerView: 1,
     spaceBetween: -.3,
