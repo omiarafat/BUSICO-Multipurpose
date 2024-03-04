@@ -9,18 +9,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="Responsive css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Responsive css/responsive.css">
     <title>BUSICO-Multipurpose</title>
   </head>
   <body>
-    <header class="header-wrap">
-        <div class="container-fluid">
-            <nav class="d-flex justify-content-between align-items-center">
-                <div class="logo"><a href="#"><img src="imgs/logo.png"></a></div>
-                <div class="nav-right-area d-flex align-items-center">
-                    <div class="main-menu">
-                        <ul class="list-inline mb-0">
+    <header>
+        <nav id="navber">
+            <div class="header-top-bar d-none d-sm-block">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-9">
+                            <ul class="top-left-content m-0 p-0">
+                                <li><i class="fa-solid fa-paper-plane"></i>Info@example.com</li>
+                                <li class="p-0 m-0 border-0"><i class="fa-solid fa-location-dot"></i>Jones Street, New York, USA</li>
+                            </ul>
+                        </div>
+                        <div class="col-3 text-end">
+                            <div class="top-social-icons">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header-wrapper position-relative">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+                    <div class="logo"><a href="#"><img src="imgs/logo-color.png"></a></div>
+                    <div class="main-menu d-none d-xl-block">
+                        <ul class="list-inline mb-0 d-flex">
                             <li class="d-inline-block nav-item"><a class="nav-link" href="#">Home <i class="fa-solid fa-plus"></i></a>
                                 <ul class="sub-menu list-inline mb-0">
                                     <li><a href="#">homepage 1</a></li>
@@ -45,33 +65,90 @@
                             </li>
                             <li class="d-inline-block nav-item"><a class="nav-link" href="#">News</a></li>
                             <li class="d-inline-block nav-item"><a class="nav-link" href="#">Contact</a></li>
-                            <li class="d-inline-block nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         </ul>
                     </div>
-                    <div class="header-right-side d-flex justify-content-between align-items-center">
-                       <a class="head-btn" href="#">Get Free Quote</a>
-                       <a class="mob-btn" href="#"><i class="fa-solid fa-bars"></i></a>
+                    <div class="header-right-side d-none d-xl-block">
+                        <div class="d-flex align-items-center">
+                            <div class="search-icon">
+                                <a class="" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                            <div class="call-action">
+                                <span>Call For Support</span>
+                                <p class="m-0">+5 282 350 360</p>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Menu End -->
+
+                    <!-- Toggle button (hidden on large screens) -->
+                    <button class="menuBtn d-block d-xl-none">
+                        <span class="open-menu justify-center items-center flex">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </button>
                 </div>
-            </nav>
+            </div>
+        </nav>
+        <!-- Toggle Menu -->
+        <div class="menu-wrapper">
+            <span class="toggle-header d-flex justify-content-between">
+                <a href="index.html"><img src="imgs/footer-logo.png"></a>
+                <button class="close-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </span>
+            <ul class="menu p-0">
+                <li class="menu-item d-flex justify-content-between position-relative">
+                    <a class="text-capitalize" href="#">Home</a>
+                    <span class="toggle-menu-icon position-absolute"><i class="fa-solid fa-plus"></i></span>
+                </li>
+                <li class="menu-item position-relative">
+                    <a class="text-capitalize" href="#">Services</a>
+                </li>
+                <li class="menu-item position-relative">
+                    <a class="text-capitalize" href="#">portfolio</a>
+                </li>
+                <li class="menu-item d-flex justify-content-between position-relative">
+                    <a class="text-capitalize" href="#">Pages</a>
+                    <span class="toggle-menu-icon position-absolute"><i class="fa-solid fa-plus"></i></span>
+                </li>
+                <li class="menu-item position-relative">
+                    <a class="text-capitalize" href="#">News</a>
+                </li>
+                <li class="menu-item position-relative">
+                    <a class="text-capitalize border-0" href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="mobile-nav-contact">
+                <ul class="p-0 m-0">
+                    <li class="m-0"><i class="fa-solid fa-envelope"></i><a href="#">needhelp@busico.com</a></li>
+                    <li><i class="fa-solid fa-phone-flip"></i><a href="#">+673 853 605 985</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> 7300-7398 Colonial Rd, Brooklyn, NY 11209</li>
+                </ul>
+            </div>
+            <div class="mobile-nav-social">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
+        <!-- Toggle Menu End-->
     </header>
     <section class="banar-wrap">
         <div class="swiper BanarSlide">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="horo-imgs">
+                <div class="horo-imgs position-relative">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xxl-7 col-lg-8 col-md-8 col-sm-10 col-12 px-md-5">
-                                <div class="hero-content">
-                                    <h1>we build Your Dream</h1>
-                                    <p>Busico is a construction and architecture environmentally most responsible for any kinds of themes.</p>
+                            <div class="col-12 pe-lg-5 col-xxl-7 col-lg-9">
+                                <div class="hero-content pe-lg-3">
+                                    <h1>we make Dream home</h1>
+                                    <p class="pe-lg-5">Busico is a construction and architecture environmentally most responsible for any kinds of themes.</p>
                                     <a class="temp-btn" href="#">contact us</a>
-                                    <a class="plus-text-btn" href="#">
-                                        <div class="banar-icon"><i class="fa-solid fa-plus"></i></div>
-                                        <div class="banar-text"><span>Explore</span> More about Us</div>
-                                    </a>
+                                    <a class="temp-btn plus-text-btn" href="#">our portfolio</a>
                                 </div>
                             </div>
                         </div>
@@ -79,18 +156,15 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="horo-imgs">
+                <div class="horo-imgs horo-imgsB position-relative">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xxl-7 col-lg-8 col-md-8 col-sm-10 col-12 px-md-5">
-                                <div class="hero-content">
+                            <div class="col-12 pe-lg-5 col-xxl-7 col-lg-9">
+                                <div class="hero-content pe-lg-3">
                                     <h1>we build Your Dream</h1>
-                                    <p>Busico is a construction and architecture environmentally most responsible for any kinds of themes.</p>
+                                    <p class="pe-lg-5">Busico is a construction and architecture environmentally most responsible for any kinds of themes.</p>
                                     <a class="temp-btn" href="#">contact us</a>
-                                    <a class="plus-text-btn" href="#">
-                                        <div class="banar-icon"><i class="fa-solid fa-plus"></i></div>
-                                        <div class="banar-text"><span>Explore</span> More about Us</div>
-                                    </a>
+                                    <a class="temp-btn plus-text-btn" href="#">our portfolio</a>
                                 </div>
                             </div>
                         </div>
@@ -98,90 +172,28 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next">NEXT<i class="fa-solid fa-arrow-right-long"></i></div>
-            <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left-long"></i>PREV</div>
           </div>
-    </section>
-    <section class="workp-process">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-work-item position-relative">
-                        <div class="single-work-icon"><img src="imgs/writing.png"></div>
-                        <div class="single-work-content">
-                            <span>Sketch</span>
-                            <h5>Core Planning</h5>
-                            <p>Our promise as a contractor is to build community value into every projects while delivering professional</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-work-item position-relative bordernon">
-                        <div class="single-work-icon"><img src="imgs/flow-chart.png"></div>
-                        <div class="single-work-content">
-                            <span>Project</span>
-                            <h5>Execution Step</h5>
-                            <p>Our promise as a contractor is to build community value into every projects while delivering professional</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-work-item border-right position-relative">
-                        <div class="single-work-icon"><img src="imgs/interior-design.png"></div>
-                        <div class="single-work-content">
-                            <span>Architect</span>
-                            <h5>Project Result</h5>
-                            <p>Our promise as a contractor is to build community value into every projects while delivering professional</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <section class="about">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-5 col-12">
-                    <div class="img-block position-relative">
-                        <img src="imgs/img-block1.jpg">
-                        <div class="poppu-img position-absolute d-flex justify-content-center align-items-center">
-                            <div class="video-btn">
-                                <a href="#"><i class="fa-solid fa-play"></i></a>
-                            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-12 pe-xl-0">
+                    <div class="about-cover-bg me-xl-5">
+                        <div class="our-years">
+                            <div class="year-outline"><h2 class="m-0">30</h2></div>
+                            <p class="m-0">Years <span>Experience</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-7 col-12">
-                    <div  class="about-right">
-                        <div class="block-contents">
-                            <div class="section-title">
-                                <span>01. About Company</span>
-                                <h2>creative building design company</h2>
-                            </div>
-                            <p>We have intentionally never developed a stylistic formula for our work, which is why our projects never quite look or feel the same. Each of our spaces is the result of our ability to listen.</p>
+                <div class="col-xl-6 col-12 mt-5 mt-lg-0">
+                    <div class="block-contents">
+                        <div class="section-title">
+                            <span>About Company</span>
+                            <h2>We Always Think On Your Dream</h2>
                         </div>
-                        <div class="tabs-block">
-                            <nav id="tabs" class="position-relative">
-                                <li class="active"><a class="position-relative" href="#tab1">Technology</a></li>
-                                <li><a class="position-relative" href="#tab2">Materials</a></li>
-                                <li><a class="position-relative" href="#tab3">Approved</a></li>
-                            </nav>
-                            <section id="tab-contents">
-                                <div id="tab1" class="tab-contents active">
-                                  <p>We have intentionally never developed a stylistic formula for our work,</p>
-                                </div>
-                                <div id="tab2" class="tab-contents">
-                                  <p>which is why our projects never quite look or feel the same.</p>
-                                </div>
-                                <div id="tab3" class="tab-contents">
-                                  <p> Each of our spaces is the result of our ability to listen.</p>
-                                </div>
-                            </section>
-                        </div>
-                        <a class="plus-text-btn" href="#">
-                            <div class="banar-icon"><i class="fa-solid fa-plus"></i></div>
-                            <div class="banar-text"><span>Explore</span> More about Us</div>
-                        </a>
+                        <blockquote>Construction actually recommends for content specifically the people for the house keywords is popular.</blockquote>
+                        <p class="m-0">You should only pick the keywords that are both popular with people and ones that you’re also able to rank for. Brian Dean actually recommends creating content specifically for the people for the house. </p>
+                        <a class="temp-btn" href="#">read more</a>
                     </div>
                 </div>
             </div>
@@ -190,62 +202,53 @@
     <section class="our-service">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="block-contents">
-                        <div class="section-title">
-                            <span>02. Featured Service</span>
-                            <h2>What We Offer You</h2>
-                        </div>
-                        <p>Our promise as a contractor is to build strong community value into every projects</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service-box position-relative">
-                        <div class="single-service-bg position-absolute"></div>
-                        <div class="service-single-icon"><img src="imgs/blueprint.png"></div>
-                        <div class="single-service-content">
-                            <h4 class="mb-0"><a href="#">Architecture</a></h4>
-                            <p class="mb-0">We commit ourselves to complete all projects within the timeline set with our honorable clients.</p>
+                <div class="col-xl-12">
+                    <div class="block-contents text-center">
+                        <div class="section-title position-relative">
+                            <h5 class="m-0 position-absolute text-uppercase d-none d-xl-block">Service</h5>
+                            <span>Featured Service</span>
+                            <h2>What We Do</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service-box position-relative">
-                        <div class="single-service-bg position-absolute"></div>
-                        <div class="service-single-icon"><img src="imgs/interior-design.png"></div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-service-box">
+                        <div class="single-service-bg"></div>
                         <div class="single-service-content">
-                            <h4 class="mb-0"><a href="#">Interior Design</a></h4>
+                            <div class="service-title d-flex align-items-center">
+                                <div class="service-icon"><img src="imgs/blueprint.png"></div>
+                                <h4 class="mb-0"><a href="#">BUILDING REPAIR & CONSTRUCTION</a></h4>
+                            </div>
                             <p class="mb-0">We commit ourselves to complete all projects within the timeline set with our honorable clients.</p>
+                            <a class="text-uppercase text-decoration-underline d-block" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service-box position-relative mb-md-0">
-                        <div class="single-service-bg position-absolute"></div>
-                        <div class="service-single-icon"><img src="imgs/living-room.png"></div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-service-box">
+                        <div class="single-service-bg bg2"></div>
                         <div class="single-service-content">
-                            <h4 class="mb-0"><a href="#">Home Decoration</a></h4>
-                            <p class="mb-0">We commit ourselves to complete all projects within the timeline set with our honorable clients.</p>
+                            <div class="service-title d-flex align-items-center">
+                                <div class="service-icon"><img src="imgs/interior-design.png"></div>
+                                <h4 class="mb-0"><a href="#">Any Kind project Planning</a></h4>
+                            </div>
+                            <p class="mb-0">Thousands of successful projects we are one of the most trusted construction companies.</p>
+                            <a class="text-uppercase text-decoration-underline d-block" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service-box position-relative mb-md-0">
-                        <div class="single-service-bg position-absolute"></div>
-                        <div class="service-single-icon"><img src="imgs/varnish.png"></div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-service-box">
+                        <div class="single-service-bg bg3"></div>                           
                         <div class="single-service-content">
-                            <h4 class="mb-0"><a href="#">Repair & Painting</a></h4>
-                            <p class="mb-0">We commit ourselves to complete all projects within the timeline set with our honorable clients.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service-box position-relative mb-0">
-                        <div class="single-service-bg position-absolute"></div>
-                        <div class="service-single-icon"><img src="imgs/sketch.png"></div>
-                        <div class="single-service-content">
-                            <h4 class="mb-0"><a href="#">Sketching</a></h4>
-                            <p class="mb-0">We commit ourselves to complete all projects within the timeline set with our honorable clients.</p>
+                            <div class="service-title d-flex align-items-center">
+                                <div class="service-icon"><img src="imgs/living-room.png"></div>
+                                <h4 class="mb-0"><a href="#">Office, Home Interior Design</a></h4>
+                            </div>
+                            <p class="mb-0">We have a proven record of best result of building and reputable company in the United States.</p>
+                            <a class="text-uppercase text-decoration-underline d-block" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -255,85 +258,22 @@
     <section class="cta-wrapper">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-between">
-                <div class="cta-text-mar col-xl-7 col-md-8 col-12 m-xxl-0">
+                <div class="col-xl-7 col-md-8 col-12">
                     <div class="cta-text d-md-flex text-center text-md-start align-items-center">
                         <div class="cta-icon"><img src="imgs/email.png"></div>
                         <h2>Looking for a quality Architect for your project?</h2>
                     </div>
                 </div>
-                <div class="col-md-4 text-center text-md-end">
+                <div class="col-xl-5 col-md-4 text-center text-md-end">
                     <a class="cta-btn" href="#">Get a Free Quote</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="core-features position-relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-12 pe-0">
-                    <div class="block-contents">
-                        <div class="section-title">
-                            <span>03. Core Features</span>
-                            <h2>View Full project management</h2>
-                        </div>
-                    </div>
-                    <div class="single-icon-item d-flex">
-                        <div class="single-icon"><img src="imgs/cpu.png"></div>
-                        <div class="single-icon-content">
-                            <h3>Innovation</h3>
-                            <p>We are expert and professional.But I must explain to you how all this mistaken ofenoun cing pleasure and praising.</p>
-                        </div>
-                    </div>
-                    <div class="single-icon-item d-flex">
-                        <div class="single-icon"><img src="imgs/secure-shield.png"></div>
-                        <div class="single-icon-content">
-                            <h3>Project Handover</h3>
-                            <p>We are expert and professional.But I must explain to you how all this mistaken ofenoun cing pleasure and praising.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-6 col-12">
-                    <div class="project-details-card position-relative">
-                        <div class="project-title">
-                            <h3 class="m-0">Harvest Home</h3>
-                            <p class="m-0">We commit ourselves to complete all projects within the timeline.</p>
-                        </div>
-                        <div class="project-date">
-                            <h6 class="pro-tit m-0">Execution & Handover Date</h6>
-                            <p class="pro-tex m-0">Jan 18 2010 - Jun 23 2015</p>
-                        </div>
-                        <div class="project-client">
-                            <h6 class="pro-tit m-0">Client Name</h6>
-                            <p class="pro-tex m-0">Maxuel D Silva</p>
-                        </div>
-                        <div class="project-estimate d-flex justify-content-between align-items-center">
-                            <div class="project-single-data">
-                                <h6 class="pro-sin-tit m-0">POF</h6>
-                                <p class="pro-sin-tex m-0">Elemental</p>
-                                <div class="total-ton d-flex">
-                                    <h3 class="m-0">24.658</h3>
-                                    <span>Mon</span>
-                                </div>
-                            </div>
-                            <div class="project-single-data">
-                                <h6 class="pro-sin-tit m-0">HUI</h6>
-                                <p class="pro-sin-tex m-0">Special</p>
-                                <div class="total-ton d-flex">
-                                    <h3 class="m-0">224.658</h3>
-                                    <span>Years</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="core-features-bg position-absolute"></div>
-    </section>
     <section class="brand-carousel">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-xl-12 col-12">
                     <div class="swiper BrandSlide">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide"><div class="brand-logo"><img src="imgs/d1.png"></div></div>
@@ -352,187 +292,215 @@
             </div>
         </div>
     </section>
-    <section class="testimonial-wrapper">
+    <section class="our-tabs-wrapper position-relative">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-12 testimonial-titl">
-                    <div class="block-contents">
-                        <div class="section-title">
-                            <span>04. Testimonials</span>
-                            <h2>What People say about us</h2>
-                        </div>
+                <div class="col-12 col-xl-12">
+                    <div class="tabs-block">
+                        <nav id="tabs" class="position-relative d-flex">
+                            <li class="active"><a class="position-relative" href="#tab1"> Core Planning</a></li>
+                            <li><a class="position-relative" href="#tab2"> Raw Materials</a></li>
+                            <li><a class="position-relative" href="#tab3"> Execution</a></li>
+                            <li><a class="position-relative" href="#tab4"> Final Result</a></li>
+                        </nav>
+                        <section id="tab-contents">
+                            <div id="tab1" class="tab-contents active">
+                                <div class="tab-contents-wrap">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="tab-text">
+                                                <h2 class="text-uppercase">We Plan Strategic Before Starting a project</h2>
+                                                <p class="m-0">Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.</p>
+                                                <div class="project-estimate d-flex align-items-center">
+                                                    <div class="project-single-data">
+                                                        <p class="pro-sin-tit m-0">POF</p>
+                                                        <span class="pro-sin-tex m-0">Elemental</span>
+                                                        <h6 class="total-ton text-uppercase">
+                                                            24.658
+                                                            <span>Mon</span>
+                                                        </h6>
+                                                    </div>
+                                                    <div class="project-single-data">
+                                                        <p class="pro-sin-tit m-0">HUI</p>
+                                                        <span class="pro-sin-tex m-0">Special</span>
+                                                        <h6 class="total-ton text-uppercase">
+                                                            224.658
+                                                            <span>Years</span>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <a class="d-block text-uppercase" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="tab-imgs"><img src="imgs/project-tab.jpg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab2" class="tab-contents">
+                                <div class="tab-contents-wrap">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="tab-text">
+                                                <h2 class="text-uppercase">This is some placeholder content the Tabs</h2>
+                                                <p class="m-0">Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.</p>
+                                                <div class="project-estimate d-flex align-items-center">
+                                                    <div class="project-single-data">
+                                                        <p class="pro-sin-tit m-0">POF</p>
+                                                        <span class="pro-sin-tex m-0">Elemental</span>
+                                                        <h6 class="total-ton text-uppercase">
+                                                            24.658
+                                                            <span>Mon</span>
+                                                        </h6>
+                                                    </div>
+                                                    <div class="project-single-data">
+                                                        <p class="pro-sin-tit m-0">HUI</p>
+                                                        <span class="pro-sin-tex m-0">Special</span>
+                                                        <h6 class="total-ton text-uppercase">
+                                                            224.658
+                                                            <span>Years</span>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <a class="d-block text-uppercase" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="tab-imgs"><img src="imgs/project-tab2.jpg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab3" class="tab-contents">
+                                <div class="tab-contents-wrap">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="tab-text">
+                                                <h2 class="text-uppercase">We Plan Strategic Before Starting a project</h2>
+                                                <p class="m-0">Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.</p>
+                                                <div class="project-estimate d-flex align-items-center">
+                                                    <div class="project-single-data">
+                                                        <p class="pro-sin-tit m-0">POF</p>
+                                                        <span class="pro-sin-tex m-0">Elemental</span>
+                                                        <h6 class="total-ton text-uppercase">
+                                                            24.658
+                                                            <span>Mon</span>
+                                                        </h6>
+                                                    </div>
+                                                    <div class="project-single-data">
+                                                        <p class="pro-sin-tit m-0">HUI</p>
+                                                        <span class="pro-sin-tex m-0">Special</span>
+                                                        <h6 class="total-ton text-uppercase">
+                                                            224.658
+                                                            <span>Years</span>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <a class="d-block text-uppercase" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="tab-imgs"><img src="imgs/project-tab.jpg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab4" class="tab-contents">
+                                <div class="tab-contents-wrap">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="tab-text">
+                                                <h2 class="text-uppercase">This is some placeholder content the Tabs</h2>
+                                                <p class="m-0">Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.</p>
+                                                <div class="project-estimate d-flex align-items-center">
+                                                    <div class="project-single-data">
+                                                        <p class="pro-sin-tit m-0">POF</p>
+                                                        <span class="pro-sin-tex m-0">Elemental</span>
+                                                        <h6 class="total-ton text-uppercase">
+                                                            24.658
+                                                            <span>Mon</span>
+                                                        </h6>
+                                                    </div>
+                                                    <div class="project-single-data">
+                                                        <p class="pro-sin-tit m-0">HUI</p>
+                                                        <span class="pro-sin-tex m-0">Special</span>
+                                                        <h6 class="total-ton text-uppercase">
+                                                            224.658
+                                                            <span>Years</span>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <a class="d-block text-uppercase" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="tab-imgs"><img src="imgs/project-tab2.jpg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="swiper BanarSlide">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial-item position-relative text-center">
-                                    <div class="testimonial-icon position-absolute"><i class="fa-solid fa-quote-right"></i></div>
-                                    <p class="mb-0">Construction is an ancient human activity. It began with the purely functional need for a controlled environment to moderate the effects of climate. Constructed shelters were one means by which human beings wereable to adapt themselves to a wide variety of climates .</p>
-                                    <div class="client-info">
-                                        <h5>Tanner Snyder</h5>
-                                        <span>CEO, Snyder Digital</span>
-                                    </div>
-                                    <div class="client-imgs position-relative"></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-item position-relative text-center">
-                                    <div class="testimonial-icon position-absolute"><i class="fa-solid fa-quote-right"></i></div>
-                                    <p class="mb-0">Construction is an ancient human activity. It began with the purely functional need for a controlled environment to moderate the effects of climate. Constructed shelters were one means by which human beings wereable to adapt themselves to a wide variety of climates .</p>
-                                    <div class="client-info">
-                                        <h5>Salman Ahned</h5>
-                                        <span>CEO, Modina Themes</span>
-                                    </div>
-                                    <div class="client-imgs position-relative"></div>
-                                </div>
-                            </div>
+        </div>
+    </section>
+    <section class="faq-funfact">
+        <div class="container">
+            <div class="faq-number">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="faq-number-wrap text-center">
+                            <h2><span class="count">200</span>K+</h2>
+                            <h3>PROJECT DONE</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="faq-number-wrap text-center">
+                            <h2><span class="count">650</span>+</h2>
+                            <h3>HAPPY CLIENTS</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="faq-number-wrap text-center mb-md-0">
+                            <h2><span class="count">550</span>+</h2>
+                            <h3>Skilled Employee</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="faq-number-wrap text-center mb-md-0">
+                            <h2><span class="count">98</span>%</h2>
+                            <h3>Country Coverage</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="portfolio-carousel">
+    <section class="choose-us position-relative">
+        <div class="choose-us-bg position-absolute"></div>
         <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-xl-7 col-lg-8 col-12">
+            <div class="row">
+                <div class="offset col-lg-8 col-xl-6 col-12">
                     <div class="block-contents">
                         <div class="section-title">
-                            <span>05. Best Portfolio</span>
-                            <h2>Recent Completed Projects</h2>
+                            <span>Why Choose Us</span>
+                            <h2>People Choice Us For Success</h2>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-12 ms-auto">
-                    <a class="cta-btn" href="#">View More Projects</a>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-item-wrap">
-            <div class="swiper portfolioSlid">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="portfolio-item position-relative">
-                            <a class="portfolio-bg imgs-bg1 position-relative d-block" href="#">
-                                <div class="portfolio-icon position-absolute"><i class="fa-solid fa-plus"></i></div>
-                            </a>
-                            <div class="portfolio-content text-start">
-                                <span>DESIGN</span>
-                                <h4><a class="d-inline-block" href="#">CATALYST ARCHITECTS</a></h4>
-                                <p class="m-0">May 25 2010</p>
-                            </div>
+                    <div class="single-icon-item d-flex">
+                        <div class="single-icon"><img src="imgs/cpu.png"></div>
+                        <div class="single-icon-content">
+                            <h3>Advanced Technology</h3>
+                            <p>We are expert and professional.But I must explain to you how all this mistaken ofenoun cing pleasure and praising.</p>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-item position-relative">
-                            <a class="portfolio-bg imgs-bg2 position-relative d-block" href="#">
-                                <div class="portfolio-icon position-absolute"><i class="fa-solid fa-plus"></i></div>
-                            </a>
-                            <div class="portfolio-content text-start">
-                                <span>Interior</span>
-                                <h4><a class="d-inline-block" href="#">HILIX COMPUND VILLA</a></h4>
-                                <p class="m-0">Jul 25 2012</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-item position-relative">
-                            <a class="portfolio-bg imgs-bg3 position-relative d-block" href="#">
-                                <div class="portfolio-icon position-absolute"><i class="fa-solid fa-plus"></i></div>
-                            </a>
-                            <div class="portfolio-content text-start">
-                                <span>ARCHITECTS</span>
-                                <h4><a class="d-inline-block" href="#">Office ARCHITECTS</a></h4>
-                                <p class="m-0">Jan 05 2013</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-item position-relative">
-                            <a class="portfolio-bg imgs-bg4 position-relative d-block" href="#">
-                                <div class="portfolio-icon position-absolute"><i class="fa-solid fa-plus"></i></div>
-                            </a>
-                            <div class="portfolio-content text-start">
-                                <span>Interior</span>
-                                <h4><a class="d-inline-block" href="#">Interior Design</a></h4>
-                                <p class="m-0">Jan 05 2013</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-item position-relative">
-                            <a class="portfolio-bg imgs-bg2 position-relative d-block" href="#">
-                                <div class="portfolio-icon position-absolute"><i class="fa-solid fa-plus"></i></div>
-                            </a>
-                            <div class="portfolio-content text-start">
-                                <span>Interior</span>
-                                <h4><a class="d-inline-block" href="#">HILIX COMPUND VILLA</a></h4>
-                                <p class="m-0">Jul 25 2012</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-item position-relative">
-                            <a class="portfolio-bg imgs-bg1 position-relative d-block" href="#">
-                                <div class="portfolio-icon position-absolute"><i class="fa-solid fa-plus"></i></div>
-                            </a>
-                            <div class="portfolio-content text-start">
-                                <span>DESIGN</span>
-                                <h4><a class="d-inline-block" href="#">CATALYST ARCHITECTS</a></h4>
-                                <p class="m-0">May 25 2010</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-item position-relative">
-                            <a class="portfolio-bg imgs-bg2 position-relative d-block" href="#">
-                                <div class="portfolio-icon position-absolute"><i class="fa-solid fa-plus"></i></div>
-                            </a>
-                            <div class="portfolio-content text-start">
-                                <span>Interior</span>
-                                <h4><a class="d-inline-block" href="#">HILIX COMPUND VILLA</a></h4>
-                                <p class="m-0">Jul 25 2012</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-item position-relative">
-                            <a class="portfolio-bg imgs-bg3 position-relative d-block" href="#">
-                                <div class="portfolio-icon position-absolute"><i class="fa-solid fa-plus"></i></div>
-                            </a>
-                            <div class="portfolio-content text-start">
-                                <span>ARCHITECTS</span>
-                                <h4><a class="d-inline-block" href="#">Office ARCHITECTS</a></h4>
-                                <p class="m-0">Jan 05 2013</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-item position-relative">
-                            <a class="portfolio-bg imgs-bg4 position-relative d-block" href="#">
-                                <div class="portfolio-icon position-absolute"><i class="fa-solid fa-plus"></i></div>
-                            </a>
-                            <div class="portfolio-content text-start">
-                                <span>Interior</span>
-                                <h4><a class="d-inline-block" href="#">Interior Design</a></h4>
-                                <p class="m-0">Jan 05 2013</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-item position-relative">
-                            <a class="portfolio-bg imgs-bg2 position-relative d-block" href="#">
-                                <div class="portfolio-icon position-absolute"><i class="fa-solid fa-plus"></i></div>
-                            </a>
-                            <div class="portfolio-content text-start">
-                                <span>Interior</span>
-                                <h4><a class="d-inline-block" href="#">HILIX COMPUND VILLA</a></h4>
-                                <p class="m-0">Jul 25 2012</p>
-                            </div>
+                    <div class="single-icon-item d-flex">
+                        <div class="single-icon"><img src="imgs/secure-shield.png"></div>
+                        <div class="single-icon-content">
+                            <h3>trustworthy</h3>
+                            <p>We are expert and professional.But I must explain to you how all this mistaken ofenoun cing pleasure and praising.</p>
                         </div>
                     </div>
                 </div>
@@ -542,16 +510,16 @@
     <section class="our-team">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-lg-8 col-12 text-center our-team-titl">
+                <div class="col-xl-4 col-md-6 col-12 team-member">
                     <div class="block-contents">
                         <div class="section-title">
-                            <span>06. Skilled Team</span>
-                            <h2>Meet The Expert Team</h2>
+                            <span>Skilled Team</span>
+                            <h2>Meet The Team</h2>
                         </div>
+                        <p>We are expert and professional.But I must explain to you how all this mistaken ofenoun cing pleasure and praising.</p>
+                        <a class="temp-btn" href="#">Join Our Team</a>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-xl-4 col-md-6 col-12">
                     <div class="team-member position-relative">
                         <div class="team-member-img"><img src="imgs/team1.png" alt=""></div>
@@ -612,127 +580,147 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="team-member position-relative">
+                        <div class="team-member-img"><img src="imgs/team4.jpg" alt=""></div>
+                        <div class="team-details-bar position-relative d-flex justify-content-between align-items-center">
+                            <div class="member-details">
+                                <div class="member-data">
+                                    <span>Contractor</span>
+                                    <h3>Brandon Tailor</h3>
+                                </div>
+                                <div class="member-socil-icon">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <a class="team-btn" href="#"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="team-member position-relative">
+                        <div class="team-member-img"><img src="imgs/team5.jpg" alt=""></div>
+                        <div class="team-details-bar position-relative d-flex justify-content-between align-items-center">
+                            <div class="member-details">
+                                <div class="member-data">
+                                    <span>Manager</span>
+                                    <h3>Utappha Karun</h3>
+                                </div>
+                                <div class="member-socil-icon">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <a class="team-btn" href="#"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="faq-funfact position-relative">
+    <section class="project position-relative">
         <div class="container">
-            <div class="faq-number">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="faq-number-wrap text-center">
-                            <h2><span class="count">200</span>K+</h2>
-                            <h3>PROJECT DONE</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="faq-number-wrap text-center">
-                            <h2><span class="count">650</span>+</h2>
-                            <h3>HAPPY CLIENTS</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="faq-number-wrap text-center mb-md-0">
-                            <h2><span class="count">550</span>+</h2>
-                            <h3>Skilled Employee</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="faq-number-wrap text-center mb-md-0">
-                            <h2><span class="count">98</span>%</h2>
-                            <h3>Country Coverage</h3>
+            <div class="row">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="block-contents">
+                        <div class="section-title position-relative">
+                            <h5 class="m-0 position-absolute text-uppercase d-none d-xl-block">Project</h5>
+                            <span>Recent Portfolio</span>
+                            <h2>Let's See recent Projects</h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="faq-ecul">
-                <div class="row">
-                    <div class="col-xl-7 col-lg-6 col-12 pe-0">
-                        <div class="faq-accordion">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item p-0 position-relative">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="accordion-number position-absolute">1</span>
-                                            How do I find the right architect for my project?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            We have intentionally never developed a stylistic formula for our work, which is why our projects never quite look or feel the same. Each of our spaces is the result of our ability to listen.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item position-relative">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <span class="accordion-number position-absolute">2</span>
-                                            What services do architects provide?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            We have intentionally never developed a stylistic formula for our work, which is why our projects never quite look or feel the same. Each of our spaces is the result of our ability to listen.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item position-relative">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <span class="accordion-number position-absolute">3</span>
-                                        How do I find the right architect for my project?
-                                    </button>
-                                  </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            We have intentionally never developed a stylistic formula for our work, which is why our projects never quite look or feel the same. Each of our spaces is the result of our ability to listen.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item position-relative">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                        <span class="accordion-number position-absolute">4</span>
-                                        How are architects compensated?
-                                    </button>
-                                  </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            We have intentionally never developed a stylistic formula for our work, which is why our projects never quite look or feel the same. Each of our spaces is the result of our ability to listen.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item position-relative">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                        <span class="accordion-number position-absolute">5</span>
-                                        Can you work with clients long distance?
-                                    </button>
-                                  </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            We have intentionally never developed a stylistic formula for our work, which is why our projects never quite look or feel the same. Each of our spaces is the result of our ability to listen.
-                                        </div>
-                                    </div>
+        </div>
+        <div class="project-carousel-wrapper position-relative">
+            <div class="swiper projectSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="single-project-card position-relative">
+                            <a class="project-bg position-relative d-block" href="#"></a>
+                            <div class="project-content d-flex align-items-center">
+                                <div class="project-number"><h2 class="m-0">01</h2></div>
+                                <div class="project-details text-start">
+                                    <span>Construction</span>
+                                    <h3 class="m-0"><a class="text-uppercase d-block" href="#">Twelve, Portland</a></h3>
+                                    <p class="m-0">Client: Gerding Development</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-5 col-lg-6 col-12 ps-0">
-                        <div class="faq-vido-call position-relative">
-                            <div class="viseo-bg d-flex justify-content-center align-items-center">
-                                <div><a class="video-play-btn d-inline-block text-center" href="#"><i class="fa-solid fa-play"></i></a></div>
+                    <div class="swiper-slide">
+                        <div class="single-project-card position-relative">
+                            <a class="project-bg project-bgp2 position-relative d-block" href="#"></a>
+                            <div class="project-content d-flex align-items-center">
+                                <div class="project-number"><h2 class="m-0">02</h2></div>
+                                <div class="project-details text-start">
+                                    <span>Construction</span>
+                                    <h3 class="m-0"><a class="text-uppercase d-block" href="#">Shreveport, Bossier</a></h3>
+                                    <p class="m-0">Client: Southeast Land</p>
+                                </div>
                             </div>
-                            <div class="faq-call-box position-absolute d-flex justify-content-between align-items-center">
-                                <div class="call-icon"><img src="imgs/call-center.png"></div>
-                                <div class="call-content">
-                                    <span> Call for support </span>
-                                    <h3>(555) 548 201 520</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single-project-card position-relative">
+                            <a class="project-bg project-bgp3 position-relative d-block" href="#"></a>
+                            <div class="project-content d-flex align-items-center">
+                                <div class="project-number"><h2 class="m-0">03</h2></div>
+                                <div class="project-details text-start">
+                                    <span>Managenment</span>
+                                    <h3 class="m-0"><a class="text-uppercase d-block" href="#">Development, House</a></h3>
+                                    <p class="m-0">Client: Green Dopler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single-project-card position-relative">
+                            <a class="project-bg position-relative d-block" href="#"></a>
+                            <div class="project-content d-flex align-items-center">
+                                <div class="project-number"><h2 class="m-0">01</h2></div>
+                                <div class="project-details text-start">
+                                    <span>Construction</span>
+                                    <h3 class="m-0"><a class="text-uppercase d-block" href="#">Twelve, Portland</a></h3>
+                                    <p class="m-0">Client: Gerding Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single-project-card position-relative">
+                            <a class="project-bg project-bgp2 position-relative d-block" href="#"></a>
+                            <div class="project-content d-flex align-items-center">
+                                <div class="project-number"><h2 class="m-0">02</h2></div>
+                                <div class="project-details text-start">
+                                    <span>Construction</span>
+                                    <h3 class="m-0"><a class="text-uppercase d-block" href="#">Shreveport, Bossier</a></h3>
+                                    <p class="m-0">Client: Southeast Land</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single-project-card position-relative">
+                            <a class="project-bg project-bgp3 position-relative d-block" href="#"></a>
+                            <div class="project-content d-flex align-items-center">
+                                <div class="project-number"><h2 class="m-0">03</h2></div>
+                                <div class="project-details text-start">
+                                    <span>Managenment</span>
+                                    <h3 class="m-0"><a class="text-uppercase d-block" href="#">Development, House</a></h3>
+                                    <p class="m-0">Client: Green Dopler</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
             </div>
         </div>
     </section>
@@ -740,8 +728,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="block-contents">
-                        <div class="section-title">
+                    <div class="block-contents text-center">
+                        <div class="section-title position-relative">
+                            <h5 class="m-0 position-absolute text-uppercase d-none d-xl-block">blog</h5>
                             <span>Our Blog Post</span>
                             <h2>Latest News</h2>
                         </div>
@@ -809,106 +798,107 @@
             </div>
         </div>
     </section>
-    <section class="footer ">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 col-12 pe-0">
-                    <div class="footer-wrap">
-                        <h3>Get In Touch</h3>
-                        <div class="footer-conten">
-                            <div class="content-info d-flex align-items-center">
-                                <div class="foot-icon"><i class="fa-solid fa-phone"></i></div>
-                                <div>
-                                    <p class="foot-text">+673 853 605 985</p>
-                                    <p class="foot-text">908 9098 987 98</p>
+    <section class="foot position-relative">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 pe-xl-0 col-sm-6 col-12">
+                        <div class="footer-wrap">
+                            <h3>Get In Touch</h3>
+                            <div class="footer-conten">
+                                <div class="content-info d-flex align-items-center">
+                                    <div class="foot-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div>
+                                        <p class="foot-text m-0">+673 853 605 985</p>
+                                        <p class="foot-text m-0">908 9098 987 98</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="content-info d-flex align-items-center">
-                                <div class="foot-icon"><i class="fa-regular fa-envelope"></i></div>
-                                <div>
-                                    <p class="foot-text">info@example.com</p>
-                                    <p class="foot-text">info@webexample.com</p>
+                                <div class="content-info d-flex align-items-center">
+                                    <div class="foot-icon"><i class="fa-regular fa-envelope"></i></div>
+                                    <div>
+                                        <p class="foot-text m-0">info@example.com</p>
+                                        <p class="foot-text m-0">info@webexample.com</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="content-info d-flex align-items-center m-0">
-                                <div class="foot-icon"><i class="fa-solid fa-location-dot"></i></div>
-                                <div>
-                                    <p class="foot-text">7300-7398 Colonial Rd, Brooklyn, </p>
-                                    <p class="foot-text">NY 11209</p>
+                                <div class="content-info d-flex align-items-center m-0">
+                                    <div class="foot-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div>
+                                        <p class="foot-text m-0">7300-7398 Colonial Rd, Brooklyn, </p>
+                                        <p class="foot-text m-0">NY 11209</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-6 col-xl-3 ps-xl-5 col-12 footer-right">
+                        <div class="footer-wrap">
+                            <h3>Quick Links</h3>
+                            <div class="footer-conten">
+                                <ul class="p-0 m-0">
+                                    <li><a href="#" class="foot-text">About Company</a></li>
+                                    <li><a href="#" class="foot-text">Communication Services</a></li>
+                                    <li><a href="#" class="foot-text">Internet of Things</a></li>
+                                    <li><a href="#" class="foot-text">Product Development</a></li>
+                                    <li><a href="#" class="foot-text">Industrial Automation</a></li>
+                                    <li><a href="#" class="foot-text m-0">Payment Getway</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-4 col-12 footer-right">
+                        <div class="footer-wrap">
+                            <h3>Newsletter</h3>
+                            <div class="map-location">
+                                <img src="imgs/footer-map.png">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xl-3 col-sm-6 col-12 footer-center">
-                    <div class="footer-wrap">
-                        <h3>Quick Links</h3>
-                        <div class="footer-conten">
-                            <ul class="p-0 m-0">
-                                <li><a href="#" class="foot-text">About Company</a></li>
-                                <li><a href="#" class="foot-text">Communication Services</a></li>
-                                <li><a href="#" class="foot-text">Internet of Things</a></li>
-                                <li><a href="#" class="foot-text">Product Development</a></li>
-                                <li><a href="#" class="foot-text">Industrial Automation</a></li>
-                                <li><a href="#" class="foot-text m-0">Payment Getway</a></li>
+            </div>
+        </div>
+        <div class="footer-cta-wrap position-relative">
+            <div class="container">
+                <div class="footer-ctabg-wrap">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <div class="footer-logo"><a href="#"><img src="imgs/footer-logo.png"></a></div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-12 ps-lg-0 foot-cta-text">
+                            <p class="mt-4 mb-4 mt-md-0 mb-md-0">Become an innovative entrepreneurial & empowered company constantly creating mission to be a world class construction company.</p>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12">
+                            <div class="footer-socil-icon ms-lg-5 text-lg-md-end d-flex flex-wrap">
+                                <a class="text-center d-inline-block" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a class="text-center d-inline-block" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a class="text-center d-inline-block" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a class="text-center d-inline-block" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 text-center text-md-start">
+                        <div class="coppyrite">
+                            <p class="m-0">© 2024 Copyright By <a href="#">Busico</a>. All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 text-end d-flex align-items-center justify-content-md-end justify-content-center">
+                        <div class="footer-menu mt-3 mt-md-0">
+                            <ul class="m-0 p-0">
+                                <li class="d-inline-block"><a class=" m-0" href="#">Teams & Conditions</a></li>
+                                <li class="d-inline-block"><a class="border-0" href="#">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-sm-6 col-12 footer-right">
-                    <div class="footer-wrap">
-                        <h3>Newsletter</h3>
-                        <div class="footer-conten">
-                            <form class="news-box" action="#">
-                                <div class="news-icon position-absolute"><i class="fa-regular fa-envelope"></i></div>
-                                <input class="inputbar position-relative" type="text" placeholder="Enter email address">
-                                <a class="form-btn d-block text-center" href="#">Subscribe Now <i class="fa-solid fa-paper-plane"></i></a>
-                            </form>
-                            <p class="foot-text">Opening Hours : <span>Mon - Fri: 9:30 AM - 10 PM</span></p>
-                        </div>
-                    </div>
-                </div>
             </div>
-            
         </div>
     </section>
-    <div class="footer-bar position-relative">
-        <div class="footer-cta-wrap position-absolute">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-3 col-md-3 col-12">
-                    <div class="footer-logo"><img src="imgs/footer-logo.png"></div>
-                </div>
-                <div class="col-lg-4 col-md-5 col-12 ps-0 foot-cta-text">
-                    <p class="m-0">Become an innovative entrepreneurial & empowered company constantly creating mission to be a world class construction company.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-sm-center align-items-center">
-                    <div class="footer-socil-icon">
-                        <a class="d-inline-block text-center m-xl-0" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a class="d-inline-block text-center" href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a class="d-inline-block text-center" href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="d-inline-block text-center" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-12 d-flex align-items-center justify-content-center justify-content-sm-srart">
-                    <div class="coppyrite">
-                        <p class="m-0">© 2022 Copyright By <a href="#">Busico</a>. All Rights Reserved</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 text-end d-flex align-items-center justify-content-md-end justify-content-center">
-                    <div class="footer-menu">
-                        <ul class="m-0 p-0">
-                            <li class="d-inline-block"><a class=" m-0" href="#">Teams & Conditions</a></li>
-                            <li class="d-inline-block"><a class="border-0" href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

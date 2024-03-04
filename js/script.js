@@ -1,10 +1,18 @@
 
 
 
+
+
+
+
+
+
+
 var swiper = new Swiper(".BanarSlide", {
     slidesPerView: 1,
     spaceBetween: -.3,
     loop: true,
+    effect: "fade",
     autoplay: {
         delay: 6500,
         disableOnInteraction: false,
@@ -12,10 +20,6 @@ var swiper = new Swiper(".BanarSlide", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
     },
   });
 
@@ -47,7 +51,7 @@ var swiper = new Swiper(".BanarSlide", {
       },
     });
 
-    var swiper = new Swiper(".portfolioSlid", {
+    var swiper = new Swiper(".projectSwiper", {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
@@ -55,19 +59,19 @@ var swiper = new Swiper(".BanarSlide", {
         delay: 6500,
         disableOnInteraction: false,
       },
-      breakpoints: {
-        576: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        992: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1191: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
       },
     });
 
@@ -126,3 +130,70 @@ $(document).ready(function() {
   }
 });
 // count js end
+
+
+
+
+// Get all sections that have an ID defined
+const sections = document.querySelectorAll("section[id]");
+
+// Add an event listener listening for scroll
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  
+  // Get current scroll position
+  let scrollY = window.pageYOffset;
+  
+  // Now we loop through sections to get height, top and ID values for each
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+  
+  
+    const sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 50;
+    sectionId = current.getAttribute("id");
+    
+    /*
+    - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+    - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+    */
+    if (
+      scrollY > sectionTop &&
+      scrollY <= sectionTop + sectionHeight
+    ){
+      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+    } else {
+      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+    }
+  });
+}
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navber").style.animation = "300ms ease-in-out fadeInDown";
+    document.getElementById("navber").style. position = "fixed";
+    document.getElementById("navber").style. background = "#fff";
+    document.getElementById("navber").style. width = "100%";
+    document.getElementById("navber").style. top = "0";
+    document.getElementById("navber").style. zIndex = "100";
+    document.getElementById("navber").style. boxShadow = "0px 20px 30px rgba(3, 4, 28, 0.1)";
+  
+  } else {
+    document.getElementById("navber").style.animation = "fadeInUp";
+  }
+}
+
+
+const openMenu = document.querySelector(".open-menu");
+const closeMenu = document.querySelector(".close-menu");
+const menuWrapper = document.querySelector(".menu-wrapper");
+
+// Sidenav Toggle
+openMenu.addEventListener("click", function () {
+	menuWrapper.classList.add("active");
+});
+
+closeMenu.addEventListener("click", function () {
+	menuWrapper.classList.remove("active");
+});
