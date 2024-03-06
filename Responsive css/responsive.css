@@ -11,6 +11,16 @@
 
 @media (max-width: 1366px) {
     .container-fluid {
+        padding: 0px 30px;
+    }
+    .main-header-wrapper::before {
+        width: 215px;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .container-fluid {
         padding: 0px 50px;
     }
     .main-header-wrapper::before {
@@ -27,7 +37,7 @@
        display: none;
     }
     .banar-wrap {
-        padding-top: 100px;
+        padding-top: 140px;
     }
     .hero-content {
         padding: 110px 0px;
