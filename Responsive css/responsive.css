@@ -9,6 +9,16 @@
 }
 
 
+@media (max-width: 1600px) {
+    .container-fluid {
+        padding: 0px 50px;
+    }
+    .main-header-wrapper::before {
+        width: 235px;
+    }
+}
+
+
 @media (max-width: 1366px) {
     .container-fluid {
         padding: 0px 30px;
@@ -18,15 +28,6 @@
     }
 }
 
-
-@media (max-width: 1600px) {
-    .container-fluid {
-        padding: 0px 50px;
-    }
-    .main-header-wrapper::before {
-        width: 235px;
-    }
-}
 
 
 @media (max-width: 900px) {
