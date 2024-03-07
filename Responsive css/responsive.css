@@ -79,6 +79,12 @@
     #tabs li {
         width: 50%;
     }
+    .tab-icon {
+        width: 16px;
+        height: 19.333px;
+        left: 22%;
+        top: 36%;
+    }
     .tab-text h2 {
         font-size: 26px;
         line-height: 37.7px;
@@ -92,17 +98,18 @@
     .choose-us {
         padding: 100px 0px;
     }
-    .choose-us-bg {
-        display: none;
-    }
     .offset {
         margin-left: 0;
     }
     .single-icon {
         width: 125px;
+        margin-bottom: 20px;
     }
     .our-team {
         padding: 100px 0px;
+    }
+    .project-bg {
+        height: 300px;
     }
     .project {
         padding: 100px 0px;
@@ -177,6 +184,10 @@
     #tabs li a {
         font-size: 16px;
         line-height: 70px;
+        padding-left: 10px;
+    }
+    .tab-icon {
+        left: 3%;
     }
     .faq-funfact {
         padding: 50px 0px 80px;

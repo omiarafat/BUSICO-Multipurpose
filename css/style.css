@@ -337,6 +337,12 @@ img {
 	background: #FF5E14;
 	transition: all 0.3s ease-in-out;
 }
+.temp-btn.plus-text-btn {
+	background: #001659;
+}
+.temp-btn.plus-text-btn:hover {
+	background: #FF5E14;
+}
 .temp-btn:hover {
 	color: #fff;
 	background: #001659;
@@ -580,6 +586,28 @@ img {
 	margin-left: -1px;
 	flex-wrap: wrap;
 }
+.tab-icon {
+	width: 20px;
+	height: 24px;
+	left: 13%;
+	top: 32%;
+}
+.tab-icon img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.active .act-icon2 {
+	visibility: hidden;
+}
+.active .act-icon {
+	visibility: visible;
+}
+.act-icon {
+	visibility: hidden;
+}
 #tabs li {
 	width: 25%;
 }
@@ -596,6 +624,7 @@ img {
 	border-bottom: 1px solid #EBEDF2;
 	text-align: center;
 	transition: all .15s ease-in-out;
+	padding-left: 10px;
 }
 #tabs li.active a {
 	background: #FF5E14;
